@@ -26,6 +26,9 @@
                     <field name="LIGHT">BLUE</field>
                   </block>
                 </value>
+                <next>
+                  <block type="movement_forward" id="110"></block>
+                </next>
               </block>
             </next>
           </block>
