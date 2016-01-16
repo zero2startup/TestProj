@@ -1,3 +1,36 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="10" x="341" y="67"></block>
+  <block type="controls_repeat" id="25" inline="true" x="312" y="74">
+    <value name="TIMES">
+      <block type="math_number" id="32">
+        <field name="NUM">100000</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="oled_cleardisplay" id="47">
+        <next>
+          <block type="oled_setcursor" id="56" inline="true">
+            <value name="STARTX">
+              <block type="math_number" id="63">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <value name="STARTY">
+              <block type="math_number" id="70">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <next>
+              <block type="oled_drawnumber" id="93" inline="true">
+                <value name="NUMBER">
+                  <block type="sensor_spectrometer" id="100">
+                    <field name="LIGHT">BLUE</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
 </xml>
