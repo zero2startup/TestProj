@@ -49,9 +49,6 @@
                         <statement name="DO0">
                           <block type="movement_stop" id="159"></block>
                         </statement>
-                        <statement name="ELSE">
-                          <block type="movement_reverse" id="174"></block>
-                        </statement>
                       </block>
                     </next>
                   </block>
